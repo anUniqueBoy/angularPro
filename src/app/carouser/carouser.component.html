@@ -1,22 +1,27 @@
 <div data-ride="carousel" class="carousel slide">
-  <ol class="carousel-indicators">
-    <li class="active"></li>
-    <li></li>
-    <li></li>
-  </ol>
+  <!-- 指示符 -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
   <!-- Carousel items -->
   <div class="carousel-inner">
-    <div class="active item">
-      <img class="slide-img" src="http://placehold.it/800x300" alt="">
+    <div class="active carousel-item">
+      <img src="http://placehold.it/850x300" alt="">
     </div>
-    <div class="item">
-        <img class="slide-img" src="http://placehold.it/800x300" alt="">
+    <div class="carousel-item">
+        <img src="http://placehold.it/850x300" alt="">
     </div>
-    <div class="item">
-        <img class="slide-img" src="http://placehold.it/800x300" alt="">
+    <div class="carousel-item">
+        <img src="http://placehold.it/850x300" alt="">
     </div>
   </div>
-  <!-- Carousel nav -->
-  <a class="carousel-control left" href="javascript:$('.carousel').carousel('prev')" data-slide="prev">&lsaquo;</a>
-  <a class="carousel-control right" href="javascript:$('.carousel').carousel('next')" data-slide="next">&rsaquo;</a>
+  <!-- 左右切换按钮 -->
+  <a class="carousel-control-prev" href="javascript:$('.carousel').carousel('prev')" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="javascript:$('.carousel').carousel('next')" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
 </div>
